@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+.wrapper .right__box .login__btn, .wrapper .right__box, .wrapper .left__box .other__btns .btn__box, .wrapper .left__box .other__btns, .wrapper .left__box .social__icon-box, .wrapper .left__box .search__box, .wrapper .left__box, .wrapper {
+  display: flex;
+  align-items: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Source Sans Pro", sans-serif;
+  border: none;
+  outline: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+header {
+  width: 100%;
+  background-color: #2A2C31;
+}
+
+.wrapper {
+  padding: 1rem 4%;
+  justify-content: space-between;
+}
+.wrapper .left__box {
+  align-items: center;
+  gap: 1rem;
+}
+.wrapper .left__box .menu__btn i {
+  font-size: 24px;
+  line-height: 40px;
+  height: 40px;
+  color: #fff;
+}
+.wrapper .left__box .logo img {
+  height: 2.8rem;
+}
+.wrapper .left__box .search__box {
+  background-color: #fff;
+  gap: 0.8rem;
+}
+.wrapper .left__box .search__box input {
+  width: 80%;
+  height: 40px;
+  padding-right: 100px;
+  padding-left: 15px;
+  font-size: 14px;
+  font-weight: 400;
+  background: #fff;
+  color: #000;
+}
+.wrapper .left__box .search__box input:hover {
+  padding-right: 100px;
+  padding-left: 15px;
+}
+.wrapper .left__box .search__box i {
+  font-weight: 900;
+  font-size: 20px;
+}
+.wrapper .left__box .search__box a {
+  text-decoration: none;
+  background-color: #4A4B51;
+  color: #fff;
+  padding: 0.2rem 0.3rem;
+  font-size: 0.8rem;
+  border-radius: 3px;
+  margin-right: 0.8rem;
+}
+.wrapper .left__box .txt {
+  font-weight: 400;
+  opacity: 0.5;
+  color: #fff;
+  padding: 6px 10px;
+}
+.wrapper .left__box .social__icon-box {
+  gap: 0.5rem;
+  justify-content: center;
+}
+.wrapper .left__box .social__icon-box .circle {
+  border-radius: 50%;
+}
+.wrapper .left__box .social__icon-box .circle i {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  height: 32px;
+  width: 32px;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+}
+.wrapper .left__box .social__icon-box .discod {
+  background-color: #6F85D5;
+}
+.wrapper .left__box .social__icon-box .telegram {
+  background-color: #0088CC;
+}
+.wrapper .left__box .social__icon-box .redit {
+  background-color: #FF3C1F;
+}
+.wrapper .left__box .social__icon-box .twitter {
+  background-color: #1D9BF0;
+}
+.wrapper .left__box .other__btns {
+  justify-content: center;
+  position: relative;
+  top: 0.5rem;
+}
+.wrapper .left__box .other__btns .btn__box {
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 0.5rem;
+  cursor: pointer;
+}
+.wrapper .left__box .other__btns .form-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper .left__box .other__btns .form-box .button-box {
+  width: 56px;
+  position: relative;
+  border-radius: 4px;
+  background: #4D5059;
+}
+.wrapper .left__box .other__btns .form-box .button-box .toggle-btn {
+  padding: 2px 4px;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  outline: none;
+  position: relative;
+  text-align: center;
+}
+.wrapper .left__box .txt {
+  font-size: 11px;
+  line-height: 20px;
+}
+.wrapper .left__box #icons {
+  color: #CAE962;
+  font-size: 20px;
+}
+.wrapper .left__box .donate__btn {
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 500;
+  text-decoration: none;
+  color: #000;
+  background-color: #00FFB7;
+  padding: 0.6rem 1.2rem;
+  cursor: pointer;
+}
+.wrapper .right__box {
+  justify-content: center;
+}
+.wrapper .right__box .login__btn {
+  justify-content: center;
+  text-decoration: none;
+  padding: 10px 15px;
+  font-weight: 400;
+  background-color: #CAE962;
+  border-radius: 4px;
+  color: #000;
+}
+
+#btn {
+  left: 0;
+  top: 0;
+  position: absolute;
+  width: 28px;
+  height: 100%;
+  background: #CAE962;
+  border-radius: 4px;
+  transition: 0.5s;
+}/*# sourceMappingURL=main.css.map */

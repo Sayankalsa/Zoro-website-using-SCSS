@@ -1,0 +1,232 @@
+$bg-color: #2A2C31;
+$btn-color: #CAE962;
+$discod: #6F85D5;
+$telegram: #0088CC;
+$redit: #FF3C1F;
+$twitter: #1D9BF0;
+
+$donate-btn: #00FFB7;
+
+%align-center {
+    display: flex;
+    align-items: center;
+}
+
+// #4A4B51 --filter btn in header
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Source Sans Pro", sans-serif;
+    border: none;
+    outline: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+header {
+    width: 100%;
+    background-color: $bg-color;
+}
+
+.wrapper {
+    padding: 1rem 4%;
+    @extend %align-center;
+    justify-content: space-between;
+
+    .left__box {
+        @extend %align-center;
+        align-items: center;
+        gap: 1rem;
+
+        .menu__btn i {
+            font-size: 24px;
+            line-height: 40px;
+            height: 40px;
+            color: #fff;
+        }
+
+        .logo img {
+            height: 2.8rem;
+        }
+
+        .search__box {
+            background-color: #fff;
+            @extend %align-center;
+            gap: .8rem;
+
+            input {
+                width: 80%;
+                height: 40px;
+                padding-right: 100px;
+                padding-left: 15px;
+                font-size: 14px;
+                font-weight: 400;
+                background: #fff;
+                color: #000;
+
+                &:hover {
+                    padding-right: 100px;
+                    padding-left: 15px;
+                }
+            }
+
+            i {
+                font-weight: 900;
+                font-size: 20px;
+            }
+
+            a {
+                text-decoration: none;
+                background-color: #4A4B51;
+                color: #fff;
+                padding: .2rem .3rem;
+                font-size: .8rem;
+                border-radius: 3px;
+                margin-right: .8rem;
+            }
+        }
+
+        .txt {
+            font-weight: 400;
+            opacity: .5;
+            color: #fff;
+            padding: 6px 10px;
+        }
+
+        .social__icon-box {
+            @extend %align-center;
+            gap: .5rem;
+            justify-content: center;
+
+            .circle {
+                border-radius: 50%;
+
+                i {
+                    display: inline-flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 32px;
+                    width: 32px;
+                    text-align: center;
+                    color: #fff;
+                    cursor: pointer;
+                }
+            }
+
+            .discod {
+                background-color: $discod;
+            }
+
+            .telegram {
+                background-color: $telegram;
+            }
+
+            .redit {
+                background-color: $redit;
+            }
+
+            .twitter {
+                background-color: $twitter;
+            }
+        }
+
+        .other__btns {
+            @extend %align-center;
+            justify-content: center;
+            position: relative;
+            top: .5rem;
+
+            .btn__box {
+                @extend %align-center;
+                flex-direction: column;
+                justify-content: center;
+                padding: 0 .5rem;
+                cursor: pointer;
+            }
+
+            .form-box {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                .button-box {
+                    width: 56px;
+                    position: relative;
+                    border-radius: 4px;
+                    background: #4D5059;
+
+                    .toggle-btn {
+                        padding: 2px 4px;
+                        cursor: pointer;
+                        background: transparent;
+                        border: 0;
+                        outline: none;
+                        position: relative;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+
+        .txt {
+            font-size: 11px;
+            line-height: 20px;
+        }
+
+        #icons {
+            color: $btn-color;
+            font-size: 20px;
+        }
+
+        .donate__btn {
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: 500;
+            text-decoration: none;
+            color: #000;
+            background-color: $donate-btn;
+            padding: .6rem 1.2rem;
+            cursor: pointer;
+        }
+    }
+
+    .right__box {
+        @extend %align-center;
+        justify-content: center;
+
+        .login__btn {
+            @extend %align-center;
+            justify-content: center;
+            text-decoration: none;
+            // height: 40px;
+            padding: 10px 15px;
+            font-weight: 400;
+            background-color: $btn-color;
+            border-radius: 4px;
+            color: #000;
+        }
+    }
+}
+
+#btn {
+    left: 0;
+    top: 0;
+    position: absolute;
+    width: 28px;
+    height: 100%;
+    background: $btn-color;
+    border-radius: 4px;
+    transition: .5s;
+}

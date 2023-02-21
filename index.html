@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watch Anime Online</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+
+    <header>
+
+        <div class="wrapper">
+            <div class="left__box">
+
+                <div class="menu__btn">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+
+                <div class="logo">
+                    <img src="./img/logo.png" alt="">
+                </div>
+
+                <!--* search  -->
+                <div class="search__box">
+                    <input type="text" placeholder="Search anime...">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <a href="#" class="search-btn">Filter</a>
+                </div>
+
+                <span class="txt">Join<br>now</span>
+
+                <!--* social-icons  -->
+                <div class="social__icon-box">
+                    <div class="circle discod">
+                        <i class="fa-brands fa-discord"></i>
+                    </div>
+                    <div class="circle telegram">
+                        <i class="fa-brands fa-telegram"></i>
+                    </div>
+                    <div class="circle redit">
+                        <i class="fa-brands fa-reddit-alien"></i>
+                    </div>
+                    <div class="circle twitter">
+                        <i class="fa-brands fa-twitter"></i>
+                    </div>
+                </div>
+
+                <!--* other-links -->
+                <div class="other__btns">
+
+                    <div class="btn__box">
+                        <i class="fa-solid fa-shuffle" id="icons"></i>
+                        <span class="txt">Random</span>
+                    </div>
+
+                    <!--* toggle btn -->
+                    <div class="form-box">
+                        <div class="button-box">
+                            <div id="btn"></div>
+                            <button type="button" class="toggle-btn" onclick="leftClick()">EN</button>
+                            <button type="button" class="toggle-btn" onclick="rightClick()">JP</button>
+                        </div>
+                        <span class="txt">Anime Name</span>
+                    </div>
+
+                    <div class="btn__box">
+                        <i class="fa-solid fa-comments" id="icons"></i>
+                        <span class="txt">Community</span>
+                    </div>
+
+                </div>
+
+                <a href="#" class="donate__btn">Donate</a>
+
+            </div>
+
+            <div class="right__box">
+                <a href="#" class="login__btn">Login</a>
+            </div>
+        </div>
+
+    </header>
+
+    <main></main>
+
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
