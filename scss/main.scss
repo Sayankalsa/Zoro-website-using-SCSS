@@ -36,13 +36,13 @@ img {
 
 header {
     width: 100%;
-    background-color: $bg-color;
 }
 
-.wrapper {
-    padding: 1rem 4%;
+.header__wrapper {
+    padding: .5rem 4%;
     @extend %align-center;
     justify-content: space-between;
+    background-color: $bg-color;
 
     .left__box {
         @extend %align-center;
@@ -86,7 +86,7 @@ header {
                 font-size: 20px;
             }
 
-            a {
+            .search-btn {
                 text-decoration: none;
                 background-color: #4A4B51;
                 color: #fff;
@@ -94,6 +94,10 @@ header {
                 font-size: .8rem;
                 border-radius: 3px;
                 margin-right: .8rem;
+
+                &:hover {
+                    background-color: #73757e;
+                }
             }
         }
 
@@ -210,7 +214,6 @@ header {
             @extend %align-center;
             justify-content: center;
             text-decoration: none;
-            // height: 40px;
             padding: 10px 15px;
             font-weight: 400;
             background-color: $btn-color;
@@ -219,6 +222,58 @@ header {
         }
     }
 }
+
+.second__header {
+    width: 100%;
+    background-color: #121315;
+
+    .second__header-wrapper {
+        padding: 1.2rem 4%;
+
+        .txt__box {
+            border-left: 2px solid $btn-color;
+            height: 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            line-height: 1.5;
+
+            .txt {
+                padding-left: 1rem;
+            }
+
+            .txt-1 {
+                color: $btn-color;
+                font-weight: 600;
+                font-size: 14px;
+            }
+
+            .txt-2 {
+                font-size: 12px;
+                color: #fff;
+            }
+        }
+    }
+}
+
+
+.body {
+    width: 100%;
+    background-color: $bg-color;
+    height: 200vh;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 #btn {
     left: 0;

@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
-.wrapper .right__box .login__btn, .wrapper .right__box, .wrapper .left__box .other__btns .btn__box, .wrapper .left__box .other__btns, .wrapper .left__box .social__icon-box, .wrapper .left__box .search__box, .wrapper .left__box, .wrapper {
+.header__wrapper .right__box .login__btn, .header__wrapper .right__box, .header__wrapper .left__box .other__btns .btn__box, .header__wrapper .left__box .other__btns, .header__wrapper .left__box .social__icon-box, .header__wrapper .left__box .search__box, .header__wrapper .left__box, .header__wrapper {
   display: flex;
   align-items: center;
 }
@@ -24,31 +24,31 @@ img {
 
 header {
   width: 100%;
-  background-color: #2A2C31;
 }
 
-.wrapper {
-  padding: 1rem 4%;
+.header__wrapper {
+  padding: 0.5rem 4%;
   justify-content: space-between;
+  background-color: #2A2C31;
 }
-.wrapper .left__box {
+.header__wrapper .left__box {
   align-items: center;
   gap: 1rem;
 }
-.wrapper .left__box .menu__btn i {
+.header__wrapper .left__box .menu__btn i {
   font-size: 24px;
   line-height: 40px;
   height: 40px;
   color: #fff;
 }
-.wrapper .left__box .logo img {
+.header__wrapper .left__box .logo img {
   height: 2.8rem;
 }
-.wrapper .left__box .search__box {
+.header__wrapper .left__box .search__box {
   background-color: #fff;
   gap: 0.8rem;
 }
-.wrapper .left__box .search__box input {
+.header__wrapper .left__box .search__box input {
   width: 80%;
   height: 40px;
   padding-right: 100px;
@@ -58,15 +58,15 @@ header {
   background: #fff;
   color: #000;
 }
-.wrapper .left__box .search__box input:hover {
+.header__wrapper .left__box .search__box input:hover {
   padding-right: 100px;
   padding-left: 15px;
 }
-.wrapper .left__box .search__box i {
+.header__wrapper .left__box .search__box i {
   font-weight: 900;
   font-size: 20px;
 }
-.wrapper .left__box .search__box a {
+.header__wrapper .left__box .search__box .search-btn {
   text-decoration: none;
   background-color: #4A4B51;
   color: #fff;
@@ -75,20 +75,23 @@ header {
   border-radius: 3px;
   margin-right: 0.8rem;
 }
-.wrapper .left__box .txt {
+.header__wrapper .left__box .search__box .search-btn:hover {
+  background-color: #73757e;
+}
+.header__wrapper .left__box .txt {
   font-weight: 400;
   opacity: 0.5;
   color: #fff;
   padding: 6px 10px;
 }
-.wrapper .left__box .social__icon-box {
+.header__wrapper .left__box .social__icon-box {
   gap: 0.5rem;
   justify-content: center;
 }
-.wrapper .left__box .social__icon-box .circle {
+.header__wrapper .left__box .social__icon-box .circle {
   border-radius: 50%;
 }
-.wrapper .left__box .social__icon-box .circle i {
+.header__wrapper .left__box .social__icon-box .circle i {
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -98,42 +101,42 @@ header {
   color: #fff;
   cursor: pointer;
 }
-.wrapper .left__box .social__icon-box .discod {
+.header__wrapper .left__box .social__icon-box .discod {
   background-color: #6F85D5;
 }
-.wrapper .left__box .social__icon-box .telegram {
+.header__wrapper .left__box .social__icon-box .telegram {
   background-color: #0088CC;
 }
-.wrapper .left__box .social__icon-box .redit {
+.header__wrapper .left__box .social__icon-box .redit {
   background-color: #FF3C1F;
 }
-.wrapper .left__box .social__icon-box .twitter {
+.header__wrapper .left__box .social__icon-box .twitter {
   background-color: #1D9BF0;
 }
-.wrapper .left__box .other__btns {
+.header__wrapper .left__box .other__btns {
   justify-content: center;
   position: relative;
   top: 0.5rem;
 }
-.wrapper .left__box .other__btns .btn__box {
+.header__wrapper .left__box .other__btns .btn__box {
   flex-direction: column;
   justify-content: center;
   padding: 0 0.5rem;
   cursor: pointer;
 }
-.wrapper .left__box .other__btns .form-box {
+.header__wrapper .left__box .other__btns .form-box {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.wrapper .left__box .other__btns .form-box .button-box {
+.header__wrapper .left__box .other__btns .form-box .button-box {
   width: 56px;
   position: relative;
   border-radius: 4px;
   background: #4D5059;
 }
-.wrapper .left__box .other__btns .form-box .button-box .toggle-btn {
+.header__wrapper .left__box .other__btns .form-box .button-box .toggle-btn {
   padding: 2px 4px;
   cursor: pointer;
   background: transparent;
@@ -142,15 +145,15 @@ header {
   position: relative;
   text-align: center;
 }
-.wrapper .left__box .txt {
+.header__wrapper .left__box .txt {
   font-size: 11px;
   line-height: 20px;
 }
-.wrapper .left__box #icons {
+.header__wrapper .left__box #icons {
   color: #CAE962;
   font-size: 20px;
 }
-.wrapper .left__box .donate__btn {
+.header__wrapper .left__box .donate__btn {
   border-radius: 20px;
   font-size: 13px;
   font-weight: 500;
@@ -160,10 +163,10 @@ header {
   padding: 0.6rem 1.2rem;
   cursor: pointer;
 }
-.wrapper .right__box {
+.header__wrapper .right__box {
   justify-content: center;
 }
-.wrapper .right__box .login__btn {
+.header__wrapper .right__box .login__btn {
   justify-content: center;
   text-decoration: none;
   padding: 10px 15px;
@@ -171,6 +174,41 @@ header {
   background-color: #CAE962;
   border-radius: 4px;
   color: #000;
+}
+
+.second__header {
+  width: 100%;
+  background-color: #121315;
+}
+.second__header .second__header-wrapper {
+  padding: 1.2rem 4%;
+}
+.second__header .second__header-wrapper .txt__box {
+  border-left: 2px solid #CAE962;
+  height: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  line-height: 1.5;
+}
+.second__header .second__header-wrapper .txt__box .txt {
+  padding-left: 1rem;
+}
+.second__header .second__header-wrapper .txt__box .txt-1 {
+  color: #CAE962;
+  font-weight: 600;
+  font-size: 14px;
+}
+.second__header .second__header-wrapper .txt__box .txt-2 {
+  font-size: 12px;
+  color: #fff;
+}
+
+.body {
+  width: 100%;
+  background-color: #2A2C31;
+  height: 200vh;
 }
 
 #btn {
